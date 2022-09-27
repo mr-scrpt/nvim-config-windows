@@ -1,6 +1,8 @@
 
 " Space + s saves the file
 nmap <Leader>s :write<Enter>
+" Fix stylelintplus
+nmap <Leader>f :CocCommand stylelintplus.applyAutoFixes<Enter>
 
 " Escape form insern mode from jk key press
 inoremap jk <esc>

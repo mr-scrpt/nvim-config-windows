@@ -14,7 +14,7 @@
 "  \ 'header':  ['fg', 'Comment'],
 "  \ }
 
-"let $FZF_DEFAULT_COMMAND = 'rg --files --hidden --glob "!.git/*"'
+"let $FZF_DEFAULT_COMMAND = 'rg --files --hidden --glob "!.git/*|node_modules/*"'
 
 "function! s:find_git_root()
 "  return system('git rev-parse --show-toplevel 2> /dev/null')[:-2]

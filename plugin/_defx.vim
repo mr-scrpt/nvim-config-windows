@@ -1,6 +1,6 @@
-  autocmd FileType defx call s:defx_settings()
-  autocmd VimEnter * if isdirectory(expand(printf('#%s:p', expand('<abuf>'))))
-    \ | call s:defx_open({ 'dir': expand(printf('#%s:p', expand('<abuf>'))) }) | endif
+"autocmd FileType defx call s:defx_settings()
+"autocmd VimEnter * if isdirectory(expand(printf('#%s:p', expand('<abuf>'))))
+"    \ | call s:defx_open({ 'dir': expand(printf('#%s:p', expand('<abuf>'))) }) | endif
 
 " Open filetree
 nnoremap <silent><Leader>f :call <sid>defx_open({ 'split': v:true })<CR>
@@ -41,3 +41,4 @@ function! s:defx_settings() abort
   nnoremap <silent><buffer><expr> yy defx#do_action('yank_path')
   nnoremap <silent><buffer><expr> q defx#do_action('quit')
 endfunction
+

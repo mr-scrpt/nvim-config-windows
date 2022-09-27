@@ -1,17 +1,29 @@
-" let g:coc_global_extensions = [
-"        \ 'coc-tag',
-"        \ 'coc-css',
-"        \ 'coc-html',
-"        \ 'coc-json',
-"        \ 'coc-prettier',
-"        \ 'coc-vimlsp',
-"        \ 'coc-pairs',
-"        \ 'coc-eslint',
-"        \ 'coc-stylelintplus',
-"        \ 'coc-tsserver',
-"        \ 'coc-angular'
-"        \ ]
-"
+let g:coc_user_config = {
+        \ "suggest.enablePreview": v:true,
+				\ "prettier.disableSuccessMessage": v:true,
+        \ "suggest.maxPreviewWidth": 100,
+        \ "diagnostic.checkCurrentLine": v:true,
+        \ "diagnostic.maxWindowHeight": 20,
+        \ "diagnostic.errorSign": "✖",
+        \ "diagnostic.warningSign": "⚠",
+        \ "diagnostic.infoSign": "●",
+        \ "diagnostic.hintSign": "○",
+       \ }
+
+let g:coc_global_extensions = [
+        \ 'coc-tag',
+        \ 'coc-stylelintplus',
+        \ 'coc-css',
+        \ 'coc-html',
+        \ 'coc-json',
+        \ 'coc-prettier',
+        \ 'coc-vimlsp',
+        \ 'coc-pairs',
+        \ 'coc-eslint',
+        \ 'coc-tsserver',
+        \ 'coc-emmet'
+        \ ]
+
 " inoremap <silent><expr> <TAB>
 "      \ pumvisible() ? "\<C-n>" :
 "      \ <SID>check_back_space() ? "\<TAB>" :

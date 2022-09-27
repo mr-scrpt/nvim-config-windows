@@ -8,6 +8,7 @@ Plug 'L3MON4D3/LuaSnip'
 Plug 'hrsh7th/nvim-cmp'
 Plug 'hrsh7th/cmp-nvim-lsp'
 Plug 'nvim-lua/plenary.nvim'
+
 " colorscheme
 Plug 'morhetz/gruvbox'
 
@@ -24,13 +25,16 @@ Plug 'rrethy/vim-hexokinase', { 'do': 'make hexokinase' }
 Plug 'groenewege/vim-less'
 
 " Elixir syntax highlight
-Plug 'elixir-editors/vim-elixir'
+" Plug 'elixir-editors/vim-elixir'
 
 " Shakespeare (Yesod templating)
-Plug 'pbrisbin/vim-syntax-shakespeare'
+" Plug 'pbrisbin/vim-syntax-shakespeare'
 
 " file tree
-Plug 'Shougo/defx.nvim', { 'do': ':UpdateRemotePlugins' }
+"Plug 'Shougo/defx.nvim', { 'do': ':UpdateRemotePlugins' }
+"Plug 'roxma/nvim-yarp'
+"Plug 'roxma/vim-hug-neovim-rpc'
+
 
 " fuzzy finder
  Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --all' }
@@ -76,23 +80,23 @@ Plug 'tpope/vim-repeat'
 
 " Typescript autocomplete
 Plug 'neoclide/coc.nvim', {'do': 'yarn install --frozen-lockfile'}
-Plug 'iamcco/coc-vimlsp', {'do': 'yarn install --frozen-lockfile'}
-Plug 'neoclide/coc-stylelint' , {'do': 'yarn install --frozen-lockfile'}
-Plug 'bmatcuk/coc-stylelintplus', {'do': 'yarn install --frozen-lockfile'}
-Plug 'neoclide/coc-snippets', {'do': 'yarn install --frozen-lockfile'}
-Plug 'neoclide/coc-html', {'do': 'yarn install --frozen-lockfile'}
-Plug 'neoclide/coc-css', {'do': 'yarn install --frozen-lockfile'}
-Plug 'neoclide/coc-emmet', {'do': 'yarn install --frozen-lockfile'}
-Plug 'neoclide/coc-json', {'do': 'yarn install --frozen-lockfile'}
-
-Plug 'neoclide/coc-tsserver', {'do': 'yarn install --frozen-lockfile'}
-Plug 'neoclide/coc-prettier', {'do': 'yarn install --frozen-lockfile'}
-Plug 'neoclide/coc-pairs', {'do': 'yarn install --frozen-lockfile'}
-Plug 'iamcco/coc-angular', {'do': 'yarn install --frozen-lockfile && yarn build'}
-Plug 'neoclide/coc-eslint', {'do': 'yarn install --frozen-lockfile'}
-
+" Plug 'iamcco/coc-vimlsp', {'do': 'yarn install --frozen-lockfile'}
+" Plug 'neoclide/coc-stylelint' , {'do': 'yarn install --frozen-lockfile'}
+" Plug 'bmatcuk/coc-stylelintplus', {'do': 'yarn install --frozen-lockfile'}
+" Plug 'neoclide/coc-snippets', {'do': 'yarn install --frozen-lockfile'}
+" Plug 'neoclide/coc-html', {'do': 'yarn install --frozen-lockfile'}
+" Plug 'neoclide/coc-css', {'do': 'yarn install --frozen-lockfile'}
+" Plug 'neoclide/coc-emmet', {'do': 'yarn install --frozen-lockfile'}
+" Plug 'neoclide/coc-json', {'do': 'yarn install --frozen-lockfile'}
+"
+" Plug 'neoclide/coc-tsserver', {'do': 'yarn install --frozen-lockfile'}
+" Plug 'neoclide/coc-prettier', {'do': 'yarn install --frozen-lockfile'}
+" Plug 'neoclide/coc-pairs', {'do': 'yarn install --frozen-lockfile'}
+" Plug 'iamcco/coc-angular', {'do': 'yarn install --frozen-lockfile && yarn build'}
+" Plug 'neoclide/coc-eslint', {'do': 'yarn install --frozen-lockfile'}
+"
 " Haskell highlighting
-Plug 'neovimhaskell/haskell-vim'
+" Plug 'neovimhaskell/haskell-vim'
 
 " Markdown preview
 Plug 'iamcco/markdown-preview.nvim', { 'do': { -> mkdp#util#install() }}
@@ -111,24 +115,6 @@ Plug 'wincent/vcs-jump'
 
 " Functions for manipulating highlight groups
 Plug 'wincent/pinnacle'
+Plug 'nvim-treesitter/nvim-treesitter', {'do': ':TSUpdate'}
 
-" Vim elm syntax
-Plug 'andys8/vim-elm-syntax'
-
-" highlight syntax
-Plug 'nvim-treesitter/nvim-treesitter'
 call plug#end()
-
-
-" lua << EOF
-"
-" -- Stylelint format after save
-" require'lspconfig'.stylelint_lsp.setup{
-"   settings = {
-"     stylelintplus = {
-"       autoFixOnSave = true,
-"       --autoFixOnFormat = true,
-"     }
-"   }
-" }
-" EOF
