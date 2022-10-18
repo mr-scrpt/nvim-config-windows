@@ -1,4 +1,3 @@
-
 " Space + s saves the file
 nmap <Leader>s :write<Enter>
 " Fix stylelintplus
@@ -95,3 +94,9 @@ nnoremap <esc> :noh<return><esc>
 " scroll screen remap
 nnoremap <S-k> <c-u>
 nnoremap <S-j> <c-d>
+
+
+
+
+noremap OO O<ESC>
+noremap oo o<ESC>

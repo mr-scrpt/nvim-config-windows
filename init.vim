@@ -120,4 +120,5 @@ Plug 'wincent/vcs-jump'
 Plug 'wincent/pinnacle'
 Plug 'nvim-treesitter/nvim-treesitter', {'do': ':TSUpdate'}
 
+Plug 'tpope/vim-surround'
 call plug#end()
