@@ -51,8 +51,8 @@ set signcolumn=yes
 set autoread
 
 " clipboard
-set clipboard=unnamed
-
+" set clipboard=unnamed
+set clipboard+=unnamedplus
 " no swap files
 set noswapfile
 set nobackup

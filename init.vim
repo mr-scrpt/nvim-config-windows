@@ -77,6 +77,10 @@ Plug 'sjl/gundo.vim'
 
 " Surround text with something
 Plug 'tpope/vim-surround'
+" Vim commentary
+Plug 'tpope/vim-commentary'
+
+
 
 " Allow repeating of custom commands like surround
 Plug 'tpope/vim-repeat'
