@@ -125,4 +125,5 @@ Plug 'wincent/pinnacle'
 Plug 'nvim-treesitter/nvim-treesitter', {'do': ':TSUpdate'}
 
 Plug 'tpope/vim-surround'
+Plug 'digitaltoad/vim-pug'
 call plug#end()

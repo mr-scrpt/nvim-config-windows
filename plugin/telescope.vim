@@ -33,5 +33,6 @@ nnoremap <C-p> <cmd>Telescope find_files<cr>
 nnoremap <C-f> <cmd>Telescope live_grep<cr>
 nnoremap <C-g> <cmd>Telescope buffers<cr>
 nnoremap <leader>q <cmd>Telescope file_browser<cr>
+nnoremap <leader>f <cmd>Telescope file_browser path=%:p:h<cr>
 
 nnoremap <leader>c <cmd>:bd<cr>
