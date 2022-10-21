@@ -14,6 +14,7 @@ let g:coc_global_extensions = [
         \ 'coc-tag',
         \ 'coc-stylelintplus',
         \ 'coc-css',
+        \ 'coc-htmldjango',
         \ 'coc-html',
         \ 'coc-json',
         \ 'coc-prettier',
@@ -21,7 +22,7 @@ let g:coc_global_extensions = [
         \ 'coc-pairs',
         \ 'coc-eslint',
         \ 'coc-tsserver',
-        \ 'coc-emmet'
+        \ 'coc-emmet',
         \ ]
 
 " inoremap <silent><expr> <TAB>

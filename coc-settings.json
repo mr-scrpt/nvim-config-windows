@@ -29,5 +29,11 @@
     "sass",
     "scss",
     "css"
-  ]
+  ],
+  "emmet.includeLanguages": {
+    "htmldjango": "html",
+    "njk": "html",
+    "nunjucks": "html",
+    "html": "njk"
+  }
 }
