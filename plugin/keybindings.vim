@@ -1,7 +1,7 @@
 " Space + s saves the file
 nmap <Leader>s :write<Enter>
 " Fix stylelintplus
-nmap <Leader>f :CocCommand stylelintplus.applyAutoFixes<Enter>
+nmap <Leader>l :CocCommand stylelintplus.applyAutoFixes<Enter>
 
 " Escape form insern mode from jk key press
 inoremap jk <esc>
@@ -98,5 +98,14 @@ nnoremap <S-j> <c-d>
 
 
 
-noremap OO O<ESC>
-noremap oo o<ESC>
+
+
+noremap <A-O> O<ESC>
+noremap <A-o> o<ESC>
+
+nnoremap <A-j> :m .+1<CR>==
+nnoremap <A-k> :m .-2<CR>==
+inoremap <A-j> <Esc>:m .+1<CR>==gi
+inoremap <A-k> <Esc>:m .-2<CR>==gi
+vnoremap <A-j> :m '>+1<CR>gv=gv
+vnoremap <A-k> :m '<-2<CR>gv=gv

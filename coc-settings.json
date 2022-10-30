@@ -28,7 +28,9 @@
     "markdown",
     "sass",
     "scss",
-    "css"
+    "css",
+    "htmldjango",
+    "html"
   ],
   "emmet.includeLanguages": {
     "htmldjango": "html",
