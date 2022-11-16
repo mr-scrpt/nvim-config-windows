@@ -15,7 +15,7 @@ set ruler
 set showcmd
 
 " Better display for messages
- set cmdheight=2
+ set cmdheight=1
 
 " You will have bad experience for diagnostic messages when it's default 4000.
 set updatetime=100
@@ -38,7 +38,7 @@ set shortmess+=W
 " use abbreviations in messages eg. `[RO]` instead of `[readonly]`
 set shortmess+=a
 " don't give |ins-completion-menu| messages.
-set shortmess+=c
+" set shortmess+=c
 " overwrite file-written messages
 set shortmess+=o
 " truncate file messages at start
@@ -233,3 +233,13 @@ if exists('+colorcolumn')
     au WinLeave * set nocursorline
   augroup END
 endif
+
+
+" custom text-object for numerical values
+function! Numbers()
+    call search('\d\([^0-9\.]\|$\)', 'cW')
+    normal v
+    call search('\(^\|[^0-9\.]\d\)', 'becW')
+endfunction
+xnoremap in :<C-u>call Numbers()<CR>
+onoremap in :normal vin<CR>

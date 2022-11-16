@@ -71,4 +71,5 @@ endfunction
 
 
 inoremap <silent><expr> <CR> coc#pum#visible() ? coc#pum#confirm() : "\<CR>"
-inoremap <silent><expr> <S-Space> coc#refresh() "\<C-Space>"
+" inoremap <silent><expr> <S-Space> coc#refresh() "\<C-Space>"
+inoremap <silent><expr> <A-Space> coc#refresh()

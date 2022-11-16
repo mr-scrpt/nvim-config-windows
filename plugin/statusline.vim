@@ -22,6 +22,11 @@ if has('statusline')
   set statusline+=%*
   " Split point for left and right groups
   set statusline+=%=
+
+  set statusline +=%1*%=%5l%*             "current line
+  set statusline +=%2*/%L%*               "total lines
+
+
   " Space.
   set statusline+=\  "comment to store space
   " set statusline+=               " Powerline arrow.

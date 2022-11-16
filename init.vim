@@ -1,6 +1,8 @@
 let mapleader = "\<Space>"
 
+
 call plug#begin('~/.config/nvim/plugged')
+" Plug 'Glench/Vim-Jinja2-Syntax'
 
 " lua
 Plug 'saadparwaiz1/cmp_luasnip'
