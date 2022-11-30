@@ -1,4 +1,5 @@
-colorscheme gruvbox
+" colorscheme gruvbox
+colorscheme dracula
 
-let g:gruvbox_italic=1
+" let g:gruvbox_italic=1
 
